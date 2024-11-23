@@ -28,7 +28,7 @@ Turns out it was user 'cyber's' password : .2uqPEfj3D<P'a-3
 Pivot:
 now i could log into the website on port 10000 or machine with cyber.
 home directory had 'tar' execution file which was odd.
-found manualy /var/backups/.old_pass.bak  that was belong to root.
+found manualy /var/backups/.old_pass.bak  that was belong to root. (made by root, and user can use it, so if i use it on root's file it should work)
 I've used the tar command to archive the old_pass.bak into tar and extract it with cyber as the new owner of the file.
 ./tar -cf <my-tar>.tar /var/bakcups/.old_pass.bak
 ./tar -xf <my-tar>.tar
